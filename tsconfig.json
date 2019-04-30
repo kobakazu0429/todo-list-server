@@ -2,7 +2,7 @@
   "compilerOptions": {
     "sourceMap": true,
     "noImplicitAny": true,
-    "module": "es2015",
+    "module": "commonjs",
     "target": "es6",
     "typeRoots": ["node_modules/@types", "src/typings"],
     "lib": ["esnext", "dom"],
@@ -11,11 +11,13 @@
     "strictNullChecks": true,
     "moduleResolution": "node",
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedParameters": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
-    "newLine": "LF"
+    "newLine": "LF",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
