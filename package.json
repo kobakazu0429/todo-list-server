@@ -1,4 +1,15 @@
 {
+  "name": "todo-list-server",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "author": "kobakakzu0429 <kobakazu10@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "tslint --fix -c ./tslint.json 'src/**/*.ts'",
+    "start": "npx ts-node ./src/index.ts",
+    "dev": "npx ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json"
+  },
   "devDependencies": {
     "@types/body-parser": "^1.17.0",
     "@types/dotenv": "^6.1.1",
