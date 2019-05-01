@@ -4,7 +4,7 @@ import * as errorhandler from "strong-error-handler";
 
 import { todos } from "./routes/todo";
 
-import { ENV } from "./env";
+import { NODE_ENV } from "./env";
 
 export const app = express();
 
@@ -35,7 +35,7 @@ app.use("/api/v1/todos", todos);
 
 app.use(
   errorhandler({
-    debug: ENV !== "prod",
+    debug: NODE_ENV !== "prod",
     log: true
   })
 );

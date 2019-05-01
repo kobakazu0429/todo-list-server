@@ -11,4 +11,4 @@ export const DB_CONFIG = {
   DIALECT: process.env.DIALECT || ""
 };
 
-export const ENV = (process.env.ENV || "prod") as ("prod" | "dev");
+export const NODE_ENV = (process.env.NODE_ENV || "prod") as ("prod" | "dev");
